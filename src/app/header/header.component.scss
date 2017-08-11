@@ -18,3 +18,11 @@ $background-moredark: #4527A0;
 .active {
     background: $background-moredark;
 }
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+}
