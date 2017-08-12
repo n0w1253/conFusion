@@ -22,10 +22,10 @@
 
     </div>
 
-    <div fxFlex="40">
+    <div fxFlex="40" *ngIf="dish">
 
 
-        <md-list *ngIf="dish">
+        <md-list>
             <h3>Comments</h3>
             <md-list-item *ngFor="let comment of dish.comments">
 
@@ -43,6 +43,11 @@
             </md-list-item>
         </md-list>
 
+    </div>
+
+    <div [hidden]="dish">
+        <md-spinner></md-spinner>
+        <h4>Loading . . . Please Wait</h4>
     </div>
 
 </div>
