@@ -1,6 +1,6 @@
 <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
-    <div fxFlex *ngIf="dish" [@visibility]="visibility">
+    <div fxFlex *ngIf="dish" [@visibility]="visibility" [@expand]>
 
         <md-card>
             <md-card-header>
@@ -27,7 +27,7 @@
 
     </div>
 
-    <div fxFlex *ngIf="dish" [@visibility]="visibility">
+    <div fxFlex *ngIf="dish" [@visibility]="visibility" [@expand]>
 
 
         <md-list>
